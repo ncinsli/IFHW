@@ -1,0 +1,19 @@
+#1 показывал
+#2
+def get_number(symbol) -> int:
+    if symbol in ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9'): return int(symbol)
+    return ord(symbol.lower()) - 87
+
+num = input()
+base = int(input())
+
+can = 'yes'
+for digit in num:
+    if (get_number(digit) >= base): can = 'no'
+
+print(can)
+
+
+#3
+
+
